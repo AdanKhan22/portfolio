@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.particles-display{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+
+}
