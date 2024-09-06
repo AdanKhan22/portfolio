@@ -3,7 +3,7 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 import {
   type Container,
   type ISourceOptions,
-  MoveDirection,
+  // MoveDirection,
   OutMode,
 } from "@tsparticles/engine";
 // import { loadAll } from "@tsparticles/all"; // if you are going to use `loadAll`, install the "@tsparticles/all" package too.
@@ -37,7 +37,7 @@ const App = () => {
     () => ({
       background: {
         color: {
-          value: "#000000",
+          value: "#000000", // Background color
         },
       },
       fpsLimit: 120,
@@ -45,15 +45,15 @@ const App = () => {
         events: {
           onClick: {
             enable: true,
-            mode: "push",
+            mode: "push", // Adds more particles when clicked
           },
           onHover: {
             enable: true,
-            mode: "grab",
+            mode: "grab", // Interactivity on hover
           },
         },
         modes: {
-          grab:{
+          grab: {
             distance: 200,
           },
           push: {
@@ -67,7 +67,7 @@ const App = () => {
       },
       particles: {
         color: {
-          value: "#ffffff",
+          value: "#dbd8d6", // Particle color
         },
         links: {
           color: "#ffffff",
@@ -77,35 +77,48 @@ const App = () => {
           width: 1,
         },
         move: {
-          direction: MoveDirection.none,
+          direction: "top-left", // Keep direction free for circular motion
           enable: true,
+          path: {
+            enable: true, // Enable path movement
+            options: {
+              type: "circle", // Circular movement
+            },
+          },
           outModes: {
             default: OutMode.out,
           },
           random: false,
-          speed: 3,
-          straight: false,
+          speed: 1, // Adjust speed for a smoother effect
+          straight: false, // Avoid straight lines
+          attract: { // Simulates circular attraction towards a center
+            enable: true,
+            x: 6000, // Rotation effect in 3D space
+            y: 6000,
+          },
         },
         number: {
           density: {
             enable: true,
+            area: 800, // Control particle density area
           },
-          value: 100,
+          value: 150, // Number of particles
         },
         opacity: {
-          value: 0.5,
+          value: 0.5, // Particle opacity
         },
         shape: {
-          type: "circle",
+          type: "triangle", // Shape of particles
         },
         size: {
-          value: { min: 1, max: 5 },
+          value: { min: 1, max: 5 }, // Particle size range
         },
       },
-      detectRetina: true,
+      detectRetina: true, // Retina display support
     }),
     [],
   );
+  
 
   if (init) {
     return (
