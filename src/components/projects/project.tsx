@@ -10,13 +10,12 @@ export function Projects() {
  
   return (
     <section id="projects">
-      
-      <div className="h-screen bg-transparent flex flex-col items-center justify-start">
+      <div className="bg-transparent flex flex-col items-center justify-start my-20">
         <h1 className="text-6xl font-bold mb-8 font-poppins" style={Gradient}>
           PROJECTS
 
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full md:w-2/3">
+        <div className="grid grid-cols-1 lg:grid-cols-2 w-full md:w-2/3 sm:gap-0 lg:gap-64 xl:gap-32 ">
           {/* Card 1 */}
           <CardContainer className="inter-var">
             <CardBody className="bg-transparent relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] bg-transparent dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border">

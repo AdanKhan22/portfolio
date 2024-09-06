@@ -32,10 +32,7 @@ function App() {
         <a href="#education">
             <MenuItem setActive={setActive} active={active} item="Timeline"></MenuItem>
         </a>
-        {/* Here add the download CV File */}
-        {/* <a href=""> */} 
-        <button className="px-4 py-2 text-white rounded-lg box">Download CV</button>
-        {/* </a> */}
+     
       </Menu>
       
      </div>

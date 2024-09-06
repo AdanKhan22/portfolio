@@ -20,7 +20,7 @@ import Gradient from "../headerGradient.ts"
 export default function skills() {
   return (
     <section id="skills">
-    <div className="h-screen bg-transparent flex flex-col items-center justify-start ">
+    <div className="bg-transparent flex flex-col items-center justify-start ">
             <h1 className="text-white text-6xl font-bold mb-8 font-poppins" style={Gradient} >SKILLS</h1>
                    <div className="flex flex-row m-5 p-2 flex-wrap max-w-5xl">
                      <Box alt="C++" text="C++" href="https://en.cppreference.com/w/" 

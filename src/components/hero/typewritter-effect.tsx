@@ -83,7 +83,7 @@ export const TypewriterEffect = ({
   return (
     <div
       className={cn(
-        "text-base sm:text-xl md:text-3xl lg:text-xs font-bold text-center ",
+        "text-base text-xl sm:text-xl md:text-3xl lg:text-xs font-bold text-center ",
         className
       )}
     >
@@ -167,7 +167,7 @@ export const TypewriterEffectSmooth = ({
         }}
       >
         <div
-          className="text-xs sm:text-base md:text-xl lg:text:2xl xl:text-3xl font-bold font-poppins "
+          className="text-xl sm:text-2xl md:text-3xl lg:text:4xl xl:text-4xl font-bold font-poppins "
           style={{
             whiteSpace: "nowrap",
           }}

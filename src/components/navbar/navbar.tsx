@@ -63,11 +63,19 @@ export const Menu = ({
   children: React.ReactNode;
 }) => {
   return (
-    <nav
-      onMouseLeave={() => setActive(null)}
-      className="relative text-white border border-transparent flex flex-row justify-center items-center space-x-4 bg-transparent mt-10"    >
-        {children}
-    </nav>
+<nav
+  onMouseLeave={() => setActive(null)}
+  className="relative text-white border border-transparent flex flex-col sm:flex-row justify-normal items-center space-x-1 bg-transparent mt-10
+             sm:justify-center md:justify-center lg:space-x-4"
+>
+  <div className="flex flex-row justify-normal">
+    {children}
+  </div>
+  {/* Here add the download CV File */}
+  <div className="flex justify-normal sm:ml-4 sm:flex-row sm:items-center mt-7 sm:mt-0">
+    <button className="px-4 py-2 text-white rounded-lg box">Download CV</button>
+  </div>
+</nav>
   );
 };
 
