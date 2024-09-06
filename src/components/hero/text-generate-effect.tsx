@@ -2,6 +2,13 @@ import { useEffect } from "react";
 import { motion, stagger, useAnimate } from "framer-motion";
 import { cn } from "../../../lib/utils";
 
+const gradientStyle = {
+  background: 'linear-gradient(to right, #d0d0d0, #a8a8a8)', // Subtle grey tones
+  WebkitBackgroundClip: 'text',
+  WebkitTextFillColor: 'transparent',
+};
+
+
 export const TextGenerateEffect = ({
   words,
   className,
@@ -30,16 +37,22 @@ export const TextGenerateEffect = ({
   }, [scope.current]);
 
   const renderWords = () => {
+
+  
+
+
     return (
-      <motion.div ref={scope} className="flex flex-wrap justify-center">
+      <motion.div ref={scope} className="flex flex-wrap justify-center"  >
         {wordsArray.map((word, idx) => {
           return (
             <motion.span
               key={word + idx}
-              className="text-white opacity-0 text-9xl"
-              style={{
-                filter: filter ? "blur(10px)" : "none",
-              }}
+              className="text-white opacity-0 text-9xl font-poppins "
+              // style={{
+              //   filter: filter ? "blur(10px)" : "none",          
+              // }}
+              style={gradientStyle}
+             
             >
               {word}&nbsp;
             </motion.span>
@@ -51,7 +64,7 @@ export const TextGenerateEffect = ({
 
   return (
     <div className={cn("font-bold", className)}>
-      <div className="">
+      <div className="" >
         <div className="dark:text-white text-black text-2xl leading-snug tracking-wide">
           {renderWords()}
         </div>

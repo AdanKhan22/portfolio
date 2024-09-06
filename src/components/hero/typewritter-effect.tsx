@@ -4,6 +4,16 @@ import { cn } from "../../../lib/utils"
 import { motion, stagger, useAnimate, useInView } from "framer-motion";
 import { useEffect } from "react";
 
+const gradientStyle = {
+  background: 'linear-gradient(to right, #4a90e2, #50e3c2)', // Cool blue to teal
+  WebkitBackgroundClip: 'text',
+  WebkitTextFillColor: 'transparent',
+};
+
+
+
+
+
 export const TypewriterEffect = ({
   words,
   className,
@@ -49,7 +59,7 @@ export const TypewriterEffect = ({
       <motion.div ref={scope} className="inline">
         {wordsArray.map((word, idx) => {
           return (
-            <div key={`word-${idx}`} className="inline-block">
+            <div key={`word-${idx}`} className="inline-block" >
               {word.text.map((char, index) => (
                 <motion.span
                   initial={{}}
@@ -58,6 +68,7 @@ export const TypewriterEffect = ({
                     `dark:text-white text-black opacity-0 hidden`,
                     word.className
                   )}
+                  
                 >
                   {char}
                 </motion.span>
@@ -122,7 +133,7 @@ export const TypewriterEffectSmooth = ({
       <div>
         {wordsArray.map((word, idx) => {
           return (
-            <div key={`word-${idx}`} className="inline-block">
+            <div key={`word-${idx}`} className="inline-block" style={gradientStyle}>
               {word.text.map((char, index) => (
                 <span
                   key={`char-${index}`}
@@ -156,7 +167,7 @@ export const TypewriterEffectSmooth = ({
         }}
       >
         <div
-          className="text-xs sm:text-base md:text-xl lg:text:2xl xl:text-3xl font-bold"
+          className="text-xs sm:text-base md:text-xl lg:text:2xl xl:text-3xl font-bold font-poppins "
           style={{
             whiteSpace: "nowrap",
           }}

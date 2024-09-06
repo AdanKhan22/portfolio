@@ -4,7 +4,7 @@ import { TypewriterEffectSmooth } from "./typewritter-effect";
 
 export default function hero() {
 
-    const words = "Adan Khan";
+    const words = "ADAN KHAN";
     const Typewords = [
       {
         text: "Developer",
