@@ -15,16 +15,18 @@ import Redux from "../../assets/redux.svg"
 import tailwind from "../../assets/tailwind-css-2.svg"
 import mysql from "../../assets/mysql-3.svg"
 
+import Gradient from "../headerGradient.ts"
+
 export default function skills() {
   return (
-    <>
+    <section id="skills">
     <div className="h-screen bg-transparent flex flex-col items-center justify-start ">
-            <h1 className="text-white text-4xl font-bold mb-8">Skills</h1>
+            <h1 className="text-white text-6xl font-bold mb-8 font-poppins" style={Gradient} >SKILLS</h1>
                    <div className="flex flex-row m-5 p-2 flex-wrap max-w-5xl">
                      <Box alt="C++" text="C++" href="https://en.cppreference.com/w/" 
                                src={Cpluslpus}
                                color="bg-violet-600"  ></Box>   
-                     <Box alt="C" text="C" href="https://devdocs.io/c/" 
+                     <Box alt="C" text="C" href="https://devdocs.io/c/"  
                                src={C}
                                color="bg-violet-600"  ></Box>   
                      <Box alt="PHP" text="PHP" href="https://www.php.net" 
@@ -70,6 +72,6 @@ export default function skills() {
 
                  </div>
     </div>
-    </>
+    </section>
   )
 }

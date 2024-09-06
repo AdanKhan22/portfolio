@@ -13,7 +13,8 @@ module.exports = {
     extend: {},
     fontFamily: {
       poppins: ['Poppins', 'sans-serif'],
-      firasans:['Fira Sans Condensed']
+      firasans:['Fira Sans Condensed'],
+      Roboto:['roboto-black', 'sans-serif']
     }
   },
   plugins: [addVariablesForColors],

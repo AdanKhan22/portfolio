@@ -1,6 +1,6 @@
 
 
-import { Menu, MenuItem, ProductItem }  from "./components/navbar/navbar"
+import { Menu, MenuItem}  from "./components/navbar/navbar"
 import { useState } from "react";
 import Hero from "./components/hero/hero";
 import About from "./components/about/about";
@@ -15,49 +15,29 @@ function App() {
     <>
 
   <div id="content">    
-    <div className="" >
-      <Menu setActive={setActive}>
-        <MenuItem setActive={setActive} active={active} item="Home">
-          <ProductItem
-            title="Product 1"
-            description="Description of product 1"
-            href="#"
-            src="path/to/image.jpg"
-          />
-        </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="About">
-          <ProductItem
-            title="Product 2"
-            description="Description of product 2"
-            href="#"
-            src="path/to/image2.jpg"
-          />
-        </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="Skills">
-          <ProductItem
-            title="Product 2"
-            description="Description of product 2"
-            href="#"
-            src="path/to/image2.jpg"
-          />
-        </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="Projects">
-          <ProductItem
-            title="Product 2"
-            description="Description of product 2"
-            href="#"
-            src="path/to/image2.jpg"
-          />
-        </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="Timeline">
-          <ProductItem
-            title="Product 2"
-            description="Description of product 2"
-            href="#"
-            src="path/to/image2.jpg"
-          />
-        </MenuItem>
+  <div>
+    <Menu setActive={setActive}>
+       <a href="/">
+           <MenuItem setActive={setActive} active={active} item="Home"></MenuItem>       
+       </a>
+       <a href="#about">
+            <MenuItem setActive={setActive} active={active} item="About"> </MenuItem>
+       </a>
+       <a href="#skills">
+            <MenuItem setActive={setActive} active={active} item="Skills"></MenuItem>
+        </a>
+        <a href="#projects"> 
+            <MenuItem setActive={setActive} active={active} item="Projects"></MenuItem>
+        </a>
+        <a href="#education">
+            <MenuItem setActive={setActive} active={active} item="Timeline"></MenuItem>
+        </a>
+        {/* Here add the download CV File */}
+        {/* <a href=""> */} 
+        <button className="px-4 py-2 text-white rounded-lg box">Download CV</button>
+        {/* </a> */}
       </Menu>
+      
      </div>
          <Hero></Hero>
          <About></About>

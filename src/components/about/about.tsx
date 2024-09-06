@@ -1,40 +1,37 @@
 
 import Slogan from "../slogan/slogan.tsx";
-// import Display from "../vortex/display.tsx"
+
 
 //Logos Imports
 import Instagram from "../../assets/Social_Media_Logos/instagram-2022.svg"
 import LinkedIn from "../../assets/Social_Media_Logos/linkedin-icon.svg"
 import Github from "../../assets/Social_Media_Logos/github-icon-1.svg"
 
-const gradientStyle = {
-  background: 'linear-gradient(to right, #e2e2e2, #cfcfcf)', // Dull white gradient with soft grey tones
-  WebkitBackgroundClip: 'text',
-  WebkitTextFillColor: 'transparent',
-};
+import Gradient from "../headerGradient.ts"
 
 
 export default function About() {
     return (
+      <section id="about">
       <div className="h-screen bg-transparent flex flex-col items-center justify-start content-between">
       
-        <h1 className="text-white text-6xl font-bold mb-8 font-poppins" style={gradientStyle}>ABOUT ME</h1>
+        <h1 className="text-white text-6xl font-bold mb-8 font-poppins" style={Gradient}>ABOUT ME</h1>
   
       
         <div className="flex flex-col md:flex-row items-start justify-start space-y-8 md:space-y-0 md:space-x-16 w-full md:w-2/3 mt-20">
          
   
           <div className="w-full md:w-1/2 text-white">
-            <p className="mb-4">
-            Hey there! I'm a Computer Science student with a passion for programming and constant learning. I love diving into real-world projects to put my skills to the test and grow along the way. I’m comfortable with various programming languages and excited about the possibilities in software development. My goal is to keep learning and improving while working on projects that challenge me and push boundaries. If you're looking for someone who’s eager, driven, and ready to bring fresh ideas to the table, I’m your person!
+            <p className="mb-4 font-firasans text-xl">
+            Hey there! I'm a Computer Science student with a passion for programming and constant learning <br /> <br />I love diving into real-world projects to put my skills to the test and grow along the way. I’m comfortable with various programming languages and excited about the possibilities in software development. <br /> <br /> My goal is to keep learning and improving while working on projects that challenge me and push boundaries. <br /><br /> If you're looking for someone who’s eager, driven, and ready to bring fresh ideas to the table, I’m your person!
             </p>
             <div className="space-x-4 flex flex-row gap-4">
               <a href="/" className="text-blue-400 hover:underline"><img src={Instagram} alt="Instagram" 
-                                                                     className="max-w-full max-h-8 object-contain" /></a>
+                                                                     className="max-w-full max-h-10 object-contain" /></a>
               <a href="https://www.linkedin.com/in/adan-khan-195abb28a" className="text-blue-400 hover:underline"><img src={LinkedIn} alt="Instagram" 
-                                                                     className="max-w-full max-h-8 object-contain" /></a>
+                                                                     className="max-w-full max-h-10 object-contain" /></a>
               <a href="https://github.com/AdanKhan22" className="text-blue-400 hover:underline"><img src={Github} alt="Instagram" 
-                                                                     className="max-w-full max-h-8 object-contain bg-white rounded-2xl" /></a>
+                                                                     className="max-w-full max-h-10 object-contain bg-white rounded-2xl" /></a>
             
             </div>
           </div>
@@ -51,6 +48,7 @@ export default function About() {
         </div>
           {/* <Display></Display> This thing really fucks the performance */}
       </div>
+      </section>
     );
   }
   

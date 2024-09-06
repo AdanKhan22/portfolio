@@ -8,12 +8,14 @@ interface BoxProps {
 }
 
 
-export default function box({alt , text , href , src , color} : BoxProps) {
+export default function box({alt , text , href , src } : BoxProps) {
   return (
     <>
     <a href={href}>
-      <div className={`text-white flex flex-row items-center content-center p-3 mt-6 mr-3 ml-3 border-2 border-amber-950 border-solid rounded-xl 
-                       hover:${color} active:${color} focus:outline-none focus:ring focus:ring-violet-300`}>
+    <div className="text-white flex flex-row items-center content-center p-3 mt-6 mr-3 ml-3 border-2 border-sky-800 border-solid rounded-xl
+                pointer-events-auto transition duration-500 ease-out 
+                hover:bg-cyan-900 hover:animate-pulse active:bg-cyan-900 focus:ring-2 focus:ring-blue-500 
+                active:border-blue-500 focus:outline-none active:animate-bounce">
       <img 
         className="max-w-full max-h-8 object-contain" 
         src={src}
