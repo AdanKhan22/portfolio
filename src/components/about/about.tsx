@@ -1,4 +1,4 @@
-import imgA from "../../assets/react.svg"
+
 import Slogan from "../slogan/slogan.tsx";
 // import Display from "../vortex/display.tsx"
 
@@ -26,7 +26,7 @@ export default function About() {
           </div>
           <div className="w-full md:w-1/2 flex justify-center">
             <img
-              src={imgA} 
+              src="" 
               alt="Profile Image"
               className="w-64 h-64 rounded-full object-cover"
             />

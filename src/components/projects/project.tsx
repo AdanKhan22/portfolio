@@ -8,8 +8,8 @@ export function Projects() {
     <>
      <div className="h-screen bg-transparent flex flex-col items-center justify-start">
       <h1 className="text-white text-4xl font-bold mb-8">Projects</h1>
-    <div className="flex flex-col md:flex-row items-start justify-center space-y-8 md:space-y-0 md:space-x-16 w-full md:w-2/3">
-    <CardContainer className="inter-var">
+    <div className="flex flex-col flex-wrap md:flex-row items-start justify-center space-y-8 md:space-y-0 md:space-x-16 w-full md:w-2/3">
+    <CardContainer className="inter-var ">
       <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
         <CardItem
           translateZ="50"
