@@ -6,6 +6,8 @@ import Hero from "./components/hero/hero";
 import About from "./components/about/about";
 import Skills from "./components/skills/skills";
 import Projects from "./components/projects/project"
+// import Experience from "./components/Experience/experience";
+import Footer from "./components/Footer/footer";
 
 function App() {
   const [active, setActive] = useState<string | null>(null);
@@ -40,6 +42,8 @@ function App() {
          <About></About>
          <Skills></Skills>
          <Projects></Projects>
+         {/* <Experience></Experience> */}
+         <Footer></Footer>
       </div>
     </>
   );

@@ -14,7 +14,7 @@ module.exports = {
     fontFamily: {
       poppins: ['Poppins', 'sans-serif'],
       firasans:['Fira Sans Condensed'],
-      Roboto:['roboto-black', 'sans-serif']
+      Roboto:['Roboto Condensed', 'sans-serif']
     }
   },
   plugins: [addVariablesForColors],

@@ -4,7 +4,8 @@ import Firebase from "../../assets/firebase-1.svg"
 import laravel from "../../assets/laravel-2.svg"
 import SQL from "../../assets/mysql-3.svg"
 import CSS from "../../assets/css-3.svg"
-
+import Next from "../../assets/nextjs-2.svg"
+import TS from "../../assets/typescript.svg"
 
  export const card1Logos = [
     {
@@ -50,5 +51,24 @@ import CSS from "../../assets/css-3.svg"
       name: "CSS",
       image: CSS   
     },
+  ]
+
+ export const card3Logos = [
+    {
+      id: 1,
+      name: "Next-JS",
+      image: Next   
+    },
+    {
+      id: 2,
+      name: "Typescript",
+      image: TS   
+    },
+    {
+      id: 3,
+      name: "SQL",
+      image: SQL   
+    },
+ 
   ]
 
