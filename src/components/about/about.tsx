@@ -7,15 +7,15 @@ import Instagram from "../../assets/Social_Media_Logos/instagram-2022.svg"
 import LinkedIn from "../../assets/Social_Media_Logos/linkedin-icon.svg"
 import Github from "../../assets/Social_Media_Logos/github-icon-1.svg"
 
-import Gradient from "../headerGradient.ts"
+
 
 
 export default function About() {
     return (
-      <section id="about">
+      <section id="about"> 
       <div className="bg-transparent flex flex-col items-center justify-start content-between mx-10 md:mx-3 lg:mx-0">
       
-        <h1 className="text-white text-6xl font-bold mb-8 md:mb-2 font-poppins" style={Gradient}>ABOUT ME</h1>
+        <h1 className="text-gray-100 text-6xl font-bold mb-8 md:mb-2 font-poppins">ABOUT ME</h1>
   
       
         <div className="flex flex-col lg:flex-row items-start justify-start space-y-8 md:space-y-0 md:space-x-16 w-full md:w-2/3 lg:flex-row mt-20">

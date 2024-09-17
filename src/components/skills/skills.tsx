@@ -15,13 +15,12 @@ import Redux from "../../assets/redux.svg"
 import tailwind from "../../assets/tailwind-css-2.svg"
 import mysql from "../../assets/mysql-3.svg"
 
-import Gradient from "../headerGradient.ts"
 
 export default function skills() {
   return (
     <section id="skills">
     <div className="bg-transparent flex flex-col items-center justify-start ">
-            <h1 className="text-white text-6xl font-bold mb-8 font-poppins" style={Gradient} >SKILLS</h1>
+            <h1 className="text-white text-6xl font-bold mb-8 font-poppins">SKILLS</h1>
                    <div className="flex flex-row m-5 p-2 flex-wrap max-w-5xl">
                      <Box alt="C++" text="C++" href="https://en.cppreference.com/w/" 
                                src={Cpluslpus}

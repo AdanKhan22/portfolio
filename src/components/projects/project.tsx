@@ -1,6 +1,5 @@
 
 import { CardBody, CardContainer, CardItem } from "./card";
-import Gradient from "../headerGradient.ts";
 import LogoBar from"./logobar.tsx"
 //Logo Imports
 import { card1Logos , card2Logos , card3Logos} from "./logos.ts";
@@ -11,9 +10,8 @@ export function Projects() {
   return (
     <section id="projects">
       <div className="bg-transparent flex flex-col items-center justify-start my-20">
-        <h1 className="text-6xl font-bold mb-8 font-poppins" style={Gradient}>
+        <h1 className="text-gray-100 text-6xl font-bold mb-8 font-poppins">
           PROJECTS
-
         </h1>
         <div className="grid grid-cols-1 lg:grid-cols-2 w-full md:w-2/3 sm:gap-0 lg:gap-64 xl:gap-32 ">
           {/* Card 1 */}
