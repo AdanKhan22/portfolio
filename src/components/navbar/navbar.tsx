@@ -72,9 +72,9 @@ export const Menu = ({
     {children}
   </div>
   {/* Here add the download CV File */}
-  <div className="flex justify-normal sm:ml-4 sm:flex-row sm:items-center mt-7 sm:mt-0">
+  <a className="flex justify-normal sm:ml-4 sm:flex-row sm:items-center mt-7 sm:mt-0" href="./mycv.pdf" download>
     <button className="px-4 py-2 text-white rounded-lg box">Download CV</button>
-  </div>
+  </a>
 </nav>
   );
 };
