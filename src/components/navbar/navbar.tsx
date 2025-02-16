@@ -65,14 +65,13 @@ export const Menu = ({
   return (
 <nav
   onMouseLeave={() => setActive(null)}
-  className="relative text-white border border-transparent flex flex-col sm:flex-row justify-normal items-center space-x-1 bg-transparent mt-10
-             sm:justify-center md:justify-center lg:space-x-4"
+className="fixed top-0 left-0 w-full z-50 text-white border border-transparent flex flex-col sm:flex-row justify-normal items-center space-x-1 bg-transparent mt-0 sm:justify-center md:justify-center lg:space-x-4"
 >
   <div className="flex flex-row justify-normal">
     {children}
   </div>
   {/* Here add the download CV File */}
-  <a className="flex justify-normal sm:ml-4 sm:flex-row sm:items-center mt-7 sm:mt-0" href="./mycv.pdf" download>
+  <a className="absolute justify-normal sm:ml-4 sm:flex-row sm:items-center mt-7 sm:mt-0" href="./mycv.pdf" download>
     <button className="px-4 py-2 text-white rounded-lg box">Download CV</button>
   </a>
 </nav>

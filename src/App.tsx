@@ -18,24 +18,7 @@ function App() {
 
   <div id="content">    
   <div>
-    <Menu setActive={setActive}>
-       <a href="/">
-           <MenuItem setActive={setActive} active={active} item="Home"></MenuItem>       
-       </a>
-       <a href="#about">
-            <MenuItem setActive={setActive} active={active} item="About"> </MenuItem>
-       </a>
-       <a href="#skills">
-            <MenuItem setActive={setActive} active={active} item="Skills"></MenuItem>
-        </a>
-        <a href="#projects"> 
-            <MenuItem setActive={setActive} active={active} item="Projects"></MenuItem>
-        </a>
-        <a href="#education">
-            <MenuItem setActive={setActive} active={active} item="Timeline"></MenuItem>
-        </a>
-     
-      </Menu>
+    
       
      </div>
          <Hero></Hero>

@@ -100,15 +100,15 @@ const App = () => {
         number: {
           density: {
             enable: true,
-            area: 800, // Control particle density area
+            area: 500, // Control particle density area
           },
-          value: 150, // Number of particles
+          value: 70, // Number of particles
         },
         opacity: {
           value: 0.5, // Particle opacity
         },
         shape: {
-          type: "triangle", // Shape of particles
+          type: "circle", // Shape of particles
         },
         size: {
           value: { min: 1, max: 5 }, // Particle size range
