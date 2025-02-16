@@ -1,21 +1,7 @@
 import { Pong } from "./Pong.tsx";
 
-
-
 export default function hero() {
 
-    const words = "ADAN KHAN";
-    const Typewords = [
-      {
-        text: "Developer",
-      },
-      {
-        text: "Programmer",
-      },
-      {
-        text: "Innovator",
-      },
-    ]
 
 
   return (
