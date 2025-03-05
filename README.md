@@ -4,7 +4,9 @@
 # 🚀 Modern Portfolio Website
 
 A sleek, responsive, and highly customizable **portfolio website** built using **React** and **TypeScript**. Designed to showcase your skills, projects, and experience with a clean and modern UI.
+![image](https://github.com/user-attachments/assets/b5b8dcd3-42bc-4a13-b219-897d6e2669bd)
 ![image](https://github.com/user-attachments/assets/323847a9-7816-4185-8e52-e095d02c15b8)
+![image](https://github.com/user-attachments/assets/30f2694b-7676-4c63-a632-caddfa2e1124)
 
 ## ✨ Features
 
