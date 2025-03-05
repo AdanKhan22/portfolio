@@ -1,50 +1,32 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Modern Portfolio using React and Typescript
 
-Currently, two official plugins are available:
+# 🚀 Modern Portfolio Website
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A sleek, responsive, and highly customizable **portfolio website** built using **React** and **TypeScript**. Designed to showcase your skills, projects, and experience with a clean and modern UI.
+![image](https://github.com/user-attachments/assets/323847a9-7816-4185-8e52-e095d02c15b8)
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+✅ **Built with TypeScript** – Ensures type safety and better development experience.  
+✅ **Modern UI & UX** – A visually appealing design with smooth animations.  
+✅ **Fully Responsive** – Optimized for mobile, tablet, and desktop.  
+✅ **Project Showcase** – Display your best work with project descriptions and live links.  
+✅ **Contact Form** – Built-in contact section for easy communication.  
+✅ **SEO Optimized** – Meta tags, Open Graph, and structured data for better discoverability.  
+✅ **Fast & Performant** – Optimized with lazy loading and efficient rendering.  
 
-- Configure the top-level `parserOptions` property like this:
+## 📂 Tech Stack
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **Frontend:** React, TypeScript, Tailwind CSS 
+- **Deployment:** Vercel  
+- **SEO & Performance:** Next.js (if using SSR)  
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## 🚀 Getting Started
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+### 1️⃣ Clone the Repository
+```sh
+git clone https://github.com/AdanKhan22/portfolio.git
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+
+
